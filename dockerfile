@@ -4,7 +4,7 @@ MAINTAINER Xavier
 RUN apt-get update
 RUN apt-get install -y npm
 RUN mkdir -p /usr/src/node-red
-WORKDIR /usr/src/node-red
+#  WORKDIR /usr/src/node-red
 RUN groupadd --force node-red
 RUN useradd --home /usr/src/node-red --gid node-red node-red
 RUN chown -R node-red:node-red /usr/src/node-red
